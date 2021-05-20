@@ -1,0 +1,42 @@
+mkdir # make directory - criar diretório / pasta
+cd    # change directory - navegar para diretório / pasta
+
+npm init --yes # criar um novo projeto npm
+npm install -D cypress@7.3.0 # instalar o Cypress como deps de dev
+
+npx cypress open # abre o Cypress e cria a estrutura padrão
+
+
+-----------------------------
+Aula 02
+
+Seletores: 
+	- data-selectors, data-cy, data-test
+	- id -> #id
+	- Class -> .nomeDaClasse
+
+	Exemplo de elemento: [href="https://thinkster.io"]
+	- atributos -> [atributo=valor] -> [href="https://thinkster.io"]
+	- [contém*=valor] -> [href*=thinkster]
+	- [começa^=valor] -> [href^=https://th]
+	- [termina$=valor] -> [href$=io]
+
+Ordem de busca de elementos: 
+	D-I-C-A para lembrar, literalmente DICA
+		D - data-selectors, data-cy, data-test
+		I - ID
+		C - Classe
+		A - Atributos
+
+cypress-multi-reporters
+	responsável por habilitar o uso de mais de um relatório no mesmo projeto
+
+mochawesome
+	responsável por gerar o relatório do mocha
+
+mochawesome-merge
+	Responsável por fazer o merge das infos dos arquivos em um só
+	N arquivos json -> 1 arquivo json
+
+mochawesome-report-generator
+	Gerar o report em html
