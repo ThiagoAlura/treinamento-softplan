@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-27T22:55:31.191Z",
+    "end": "2021-05-27T22:55:37.574Z",
+    "duration": 6383,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6b1b064d-574b-4958-a4dc-6d0a0d6bd357",
+      "title": "",
+      "fullFile": "cypress/integration/articles.spec.js",
+      "file": "cypress/integration/articles.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "696d8226-c88e-477d-88d4-c38c9ab62662",
+          "title": "Autenticação",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Criar um novo artigo",
+              "fullTitle": "Autenticação Criar um novo artigo",
+              "timedOut": null,
+              "duration": 6219,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "/* ==== Generated with Cypress Studio ==== */\ncy.login();\ncy.get('a[href$=editor]').click();\ncy.get('input[placeholder=\"Article title\"').type('Article Title');\ncy.get('input[placeholder=\"What is this article about?\"]').type('About nothing');\ncy.get('form textarea').type('Teste');\ncy.get('input[placeholder=\"Enter tags\"]').type('Article Title');\ncy.get('button.btn-primary').click();\ncy.get('h1').should('contain.text', 'Article Title');\n/* ==== End Cypress Studio ==== */",
+              "err": {},
+              "uuid": "6b583b6f-58a5-4e89-b61a-1376a655a12d",
+              "parentUUID": "696d8226-c88e-477d-88d4-c38c9ab62662",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6b583b6f-58a5-4e89-b61a-1376a655a12d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6219,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

@@ -4,15 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run",
+    "test": "npx cypress run env allure=true",
     "report:merge": "mochawesome-merge > index.json",
     "report:generate": "marge index.json",
-    "report:clean": "rimraf mochawesome-report index.json"
+    "report:clean": "rimraf mochawesome-report index.json",
+    "allure:generate": "allure generate allure-results --clean",
+    "allure:open": "allure open allure-report"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.5.1",
     "cypress": "^7.3.0",
     "cypress-multi-reporters": "^1.5.0",
     "mochawesome": "^6.2.2",

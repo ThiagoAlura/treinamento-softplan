@@ -1,0 +1,21 @@
+[ {
+  "uid" : "d950d4e61cce12fc",
+  "name" : "Efetuar login com usuário e senha válidos",
+  "time" : {
+    "start" : 1622155452227,
+    "stop" : 1622155456922,
+    "duration" : 4695
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ec685884e08dca0a",
+  "name" : "Criar um novo artigo",
+  "time" : {
+    "start" : 1622155443106,
+    "stop" : 1622155450027,
+    "duration" : 6921
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
